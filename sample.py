@@ -1,6 +1,7 @@
 import streamlit as st
 import numpy as np
 import pickle
+import sklearn
 
 
 model_path = "rockfall_model.pkl"   
@@ -77,3 +78,4 @@ if st.button("Predict Rockfall Probability"):
         risk = "🟢 LOW Risk"
     
     st.markdown(f"### Risk Category: {risk}")
+
